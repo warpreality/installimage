@@ -90,7 +90,7 @@ else
 fi
 
 # Unmount all partitions and print an error message if it fails
-output=$(unmount_all) ; EXITCODE=$?
+output=$(unmount_all)
 if [ $EXITCODE -ne 0 ] ; then
   echo ""
   echo -e "${RED}ERROR unmounting device(s):$NOCOL"
